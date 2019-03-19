@@ -188,7 +188,7 @@
   */
 
     //Connecting the GDP file
-    d3.csv("data/GDP.csv", function(err, countries) {
+    d3.csv("GDP.csv", function(err, countries) {
       //console.log(countries);
 
       countries.forEach(function (v, i) {
@@ -207,7 +207,7 @@
 
     });
 
-    d3.csv("data/Government_Expenditure.csv", function(err, countries){
+    d3.csv("Government_Expenditure.csv", function(err, countries){
       countries.forEach(function (v, i){
         geData[v.CountryName] = [];
         geData[v.CountryName][0] = v.CountryName;
@@ -222,7 +222,7 @@
       //setUpGE(topo);
     });
 
-    d3.csv("data/Primary_Completion.csv", function(err, countries){
+    d3.csv("Primary_Completion.csv", function(err, countries){
       countries.forEach(function (v, i){
         pcData[v.CountryName] = [];
         pcData[v.CountryName][0] = v.CountryName;
